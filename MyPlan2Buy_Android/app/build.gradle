@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "plan2buy.com.myplan2buy_developertest"
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+   compile 'com.android.support:appcompat-v7:23.3.0'
+   // compile 'org.apache.httpcomponents:httpclient:4.5.2'
+    //compile 'org.apache.httpcomponents:httpcore:4.4.4'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+       //main
+    compile 'com.facebook.fresco:fresco:0.10.0'
+    //final
+    compile 'com.facebook.fresco:animated-base-support:0.10.0'
+    compile 'com.facebook.fresco:animated-gif:0.10.0'
+    compile 'com.facebook.fresco:animated-webp:0.10.0'
+    compile 'com.facebook.fresco:webpsupport:0.10.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.jakewharton:butterknife:6.0.0'
+
+
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommerceItemActivity">
+    <ListView
+        android:id="@+id/lstVwCommerce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <EditText
+        android:layout_alignBottom="@id/lstVeProducts"
+        android:id="@+id/edtMycart"
+        android:textColor="#1c1c1e"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:width="@dimen/abc_action_button_min_width_overflow_material"
+        android:enabled="false"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:background="#e5f9ed"
+        android:hint="     Amount :" />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgBack2"
+        android:src="@drawable/back"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_gravity="right"
+        android:layout_margin="10dp" />
+</RelativeLayout>

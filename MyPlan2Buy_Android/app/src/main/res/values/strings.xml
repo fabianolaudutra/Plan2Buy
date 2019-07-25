@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Plan2Buy - Shopping Cart</string>
+    <string name="URL_STRING_SHOPPING">http://192.168.1.1:8081/developerTest/shoppingcart</string>
+    <string name="URL_STRING_SHOPPING_ITENS">http://192.168.1.1:8081/developerTest/shoppingcart/items</string>
+    <string name="URL_STRING_PRODUCTS">http://192.168.1.1:8081/developerTest/produtcs</string>
+
+</resources>
